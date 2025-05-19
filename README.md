@@ -1,8 +1,23 @@
 # IOT-URBAN-AIR-MONITORING-
-To identify and address pressing urban environmental challenges, particularly air pollution, noise  pollution, and methane gas leakage, by conceptualizing a smart IoT-based monitoring solution. 
+steps to run the project:
 
-Problem Statement:
-Urbanization has intensified environmental issues. Cities experience elevated levels of air pollutants like PM2.5 and CO2 due to vehicular emissions and industrial activities. Additionally, noise pollution from traffic and public spaces affects quality of life. Methane leaks, a less monitored hazard, pose explosion risks and contribute to global warming.
+ step 1: Install the Required Librarie in the Arduino IDE:
+   - `WiFi.h` (built-in for ESP32)
+   - `HTTPClient.h` (built-in for ESP32)
+   - `DHT sensor library` by Adafruit
+   - `Adafruit Unified Sensor` library
 
-Outcome of the Project:
-The successful completion of this project has enhanced our understanding of various IoT communication protocols and their applications. By analyzing technologies like LoRaWAN, Zigbee, Wi-Fi, and LPWAN, we identified the most suitable protocols for different IoT scenarios, such as long-range sensing, home automation, and high-speed data transfer. This knowledge will help in designing efficient, scalable, and cost-effective IoT solutions for real-world applications
+ step 2:  Upload the source code...
+   - Open the `AirQualityMonitor.ino` file in Arduino IDE
+   - Replace the placeholders in the code:
+     ```cpp
+     const char* ssid = "Your_SSID";
+     const char* password = "Your_PASSWORD";
+     http.begin("http://your-server.com/update"); // you can put the appropiate details on it ...thats your wish
+     ```
+   - Select the correct board (`ESP32 Dev Module`) and port
+   - Upload the sketch
+
+  step 3: Connect to Serial Monitor
+   - Set the baud rate to `115200`
+   - You should see temperature, humidity and methane level readings
