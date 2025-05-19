@@ -21,3 +21,5 @@ steps to run the project:
   step 3: Connect to Serial Monitor
    - Set the baud rate to `115200`
    - You should see temperature, humidity and methane level readings
+
+Your server should be ready to receive HTTP POST data. :)
