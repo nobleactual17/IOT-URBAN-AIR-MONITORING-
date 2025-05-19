@@ -1,4 +1,4 @@
-# IOT-URBAN-AIR-MONITORING-
+# IOT-URBAN-AIR-MONITORING
 steps to run the project:
 
  step 1: Install the Required Librarie in the Arduino IDE:
